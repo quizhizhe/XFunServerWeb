@@ -106,5 +106,5 @@ socialmedia:
 deploy: 
   type: git
   repo: git@github.com:quizhizhe/quizhizhe.github.io.git
-  branch: main
+  branch: gh-pages
   
