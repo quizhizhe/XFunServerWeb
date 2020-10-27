@@ -104,6 +104,4 @@ socialmedia:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
-  type: git
-  repo: #git@github.com:your_user_name/your_user_name.github.io.git
-  branch: master
+  type: ''
