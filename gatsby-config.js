@@ -10,6 +10,14 @@ module.exports = {
     // Of course you can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
     siteTitleAlt: `XFun - 鸽多服`,
+    siteTitle: `XFun`,
+    siteHeadline: `XFun - 鸽多服`,
+    siteUrl: `https://www.xfun.world`,
+    siteDescription: `A Minecraft Server`,
+    siteLanguage: `en`,
+    siteImage: `/banner.jpg`,
+    author: `Qiuzhizhe`,
+    basePath,
   },
   plugins: [
     {
