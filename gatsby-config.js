@@ -9,9 +9,9 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // Of course you can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitleAlt: `XFun - 鸽多服`,
+    siteTitleAlt: `XFun - 一个基岩版MC的服务器`,
     siteTitle: `XFun`,
-    siteHeadline: `XFun - 鸽多服`,
+    siteHeadline: `XFun - a Minecraft Bedrock Server`,
     siteUrl: `https://www.xfun.world`,
     siteDescription: `A Minecraft Server`,
     siteLanguage: `en`,
