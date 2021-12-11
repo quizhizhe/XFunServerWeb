@@ -13,7 +13,7 @@ deploy:
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: true
-  repo: quizhizhe/quizhizhe.github.io
+  repo: quizhizhe/XFunServerWeb
   on:
     branch: gatsdy
   local-dir: public
