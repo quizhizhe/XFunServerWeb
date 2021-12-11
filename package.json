@@ -14,7 +14,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages -r https://$GH_TOKEN@github.com/quizhizhe/quizhizhe.github.io.git"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages -r https://$GH_TOKEN@github.com/quizhizhe/XFunServerWeb.git"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-cara": "^1.2.16",
