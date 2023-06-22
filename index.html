@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title id="introduce" data-i18n="[html]pages.title">XFun Minecraft 服务器</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.2.1/i18next.min.js"></script>
+  <script src="./js/loc-i18next.min.js"></script>
+  <script src="./js/i18nextXHRBackend.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <p id="introduce" data-i18n="[html]pages.sortinfo">一个Minecraft服务器</p>
+    <h1>XFun</h1>
+    <p style="text-indent:2em;line-height:30px" id="introduce" data-i18n="[html]pages.introduce">
+      2019 年，我们建立了XFun并开始托管 Bedrock 服务器。 虽然基岩版于 2022 年 10 月结束，但我们可能会在未来重新访问它。 但是，目前我们还没有关闭它。 相反，我们通过启动 Java
+      版服务器开启了新的篇章，该服务器一直运行至今。
+    </p>
+    <div class="button-container">
+      <a href="https://github.com/quizhizhe/XFunServerWeb" class="button">Github</a>
+      <a href="https://map.xfun.world" class="button" data-i18n="[html]pages.map">卫星地图</a>
+      <a href="https://jq.qq.com/?_wv=1027&k=aYeFSHOr" class="button" data-i18n="[html]pages.qq">Q群:758627500</a>
+    </div>
+  </div>
+  <!-- i18next -->
+  <script>
+    var lang = window.navigator.language;
+    if (!lang.startsWith("zh")) {
+      lang = 'en-US';
+    }
+    i18next
+      .use(i18nextXHRBackend)
+      .init({
+        lng: lang,
+        fallbackLng: 'zh-CN',
+        backend: {
+          loadPath: "./assets/translation-{{lng}}.json"
+        }
+
+      }, function (err, t) {
+        if (lang == 'en-US') {
+          localize = locI18next.init(i18next);
+          localize('#introduce');
+          localize('.button');
+        }
+      });
+  </script>
+  <!-- random images -->
+  <script>
+    var bgImages = [
+      "url('./img/xfun-01.webp')",
+      "url('./img/xfun-02.webp')"
+    ];
+    var randomIndex = Math.floor(Math.random() * bgImages.length);
+    document.body.style.backgroundImage = bgImages[randomIndex];
+  </script>
+</body>
+
+</html>
