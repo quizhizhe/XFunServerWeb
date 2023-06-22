@@ -1,0 +1,19 @@
+sudo: false
+language: node_js
+before_script:
+  - npm install -g gatsby-cli
+node_js:
+  - 10 # use nodejs v10 LTS
+script:
+  - npm install
+  - npm run clean
+  - npm run deploy
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  repo: quizhizhe/XFunServerWeb
+  on:
+    branch: gatsdy
+  local-dir: public
