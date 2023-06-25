@@ -48,7 +48,7 @@ p {
 	display: inline-block;
 	font-size: 16px;
 	border-radius: 2rem;
-	width: 7rem;
+	width: 8rem;
 }
 
 @media (max-width: 600px) {
